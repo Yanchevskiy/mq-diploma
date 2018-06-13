@@ -16,6 +16,8 @@ body {
   margin:0;  
 }
 
+/*header block start*/
+
 .work-page-header {
   display: flex;
   flex-direction: column;
@@ -104,3 +106,124 @@ body {
 .work-page-header__btn__text {
   padding-top: 0.75rem;
 }
+
+/*header block end*/
+
+/*athlets, players blocks start*/
+
+.work-page-athlets__title,
+.work-page-players__title {
+  font-weight: 700;
+  font-size: 5rem;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.work-page-athlets__img {
+  padding-left: 7rem;
+}
+
+.athlets-box__num,
+.players-box__num {
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-bottom: 4px solid #5e42b0;
+  display: inline-block;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  margin-left: 2rem;
+  vertical-align: text-bottom;
+}
+
+.athlets-box__title,
+.players-box__title {
+  color: #c1c1c1;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding-top: 0.3rem;
+}
+
+.athlets-box__text,
+.players-box__text {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.08rem;
+  text-align: left;
+  padding: 0 2rem 9.7rem;
+  margin-bottom: 0;
+}
+
+.athlets-box__item_3 .athlets-box__text,
+.players-box__item_3 .players-box__text {
+  color: #ffffff;
+  padding-bottom: 5.2rem;
+  margin-bottom: 0;
+}
+
+.athlets-box__item_1 {
+  padding-top: 1.5rem;
+}
+
+.athlets-box__item_2 {
+  background-color: #f6f4fa;
+}
+
+.athlets-box__item_2 .athlets-box__text {
+  padding-bottom: 5.1rem;
+}
+
+.athlets-box__item_3 {
+  background-color: #5e42b0;
+  padding-top: 4.8rem;
+  margin-bottom: 0;
+}
+
+.athlets-box__item_3 .athlets-box__num {
+  border-bottom: 4px solid #ffffff;
+}
+
+.work-page-players__title_position {
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.work-page-players__img {
+  padding-left: 1rem;
+}
+
+.work-page-players__box {
+  margin-top: 4rem;
+}
+
+.players-box__item_2 {
+  background-color: #f5f6f7;
+}
+
+.players-box__item_2 .players-box__text {
+  letter-spacing: 0.07rem;
+  padding-bottom: 5.2rem;
+}
+
+.players-box__item_3 {
+  background-color: #0a0e34;
+  padding-top: 4.4rem;
+}
+
+.players-box__item_3 .players-box__num {
+  color: #684fb3;
+  border-bottom: 4px solid #ffffff;
+  border-radius: 2px;
+}
+
+.players-box__item_3 .players-box__text {
+  padding-bottom: 5.5rem;
+}
+
+/*athlets, players blocks end*/
