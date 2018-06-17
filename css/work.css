@@ -509,8 +509,8 @@ html {
 
   .players__img {
     position: absolute;
-    margin-left: 32rem;
-    margin-top: 4rem;   
+    margin-top: 4rem; 
+    right: 0;  
   }
 
   .players__title_position {
