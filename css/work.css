@@ -5,25 +5,24 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: Open Sans, Arial, sans-serif;
-  box-sizing: border-box;
-  min-width: 320px;
-}
-
 .work-page {
   width:100%;
-  margin:0;  
+  margin:0; 
+  font-family: Open Sans, Arial, sans-serif;
+  box-sizing: border-box;
+  min-width: 320px; 
 }
 
 /*header block start*/
 
-.work-page-header {
+.header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding-top: 3.5rem;
   padding-bottom: 8.6rem;
+  padding-right: 6.25vw;
+  padding-left: 6.25vw;
   background: url(../img/header-320.jpg);
   background-color: rgb(10, 14, 52);
   background-repeat: no-repeat;
@@ -36,12 +35,7 @@ body {
   font-weight: bold;
 }
 
-.work-page-header {
-  padding-right: 6.25vw;
-  padding-left: 6.25vw;
-}
-
-.work-page-header__logo-icon {
+.header__logo-icon {
   fill: #ffffff;
   display: block;
   width: 13rem;
@@ -49,23 +43,23 @@ body {
   margin: 0 auto;
 }
 
-.work-page-header__title,
-.work-page-header__subtitle {
+.header__title,
+.header__subtitle {
   font-size: 2.8rem;
 }
 
-.work-page-header__title {
+.header__title {
   margin-top: 12.5rem;
   margin-bottom: 1.5rem;
 }
 
-.work-page-header__subtitle {
+.header__subtitle {
   margin-top: 0;
   margin-bottom: 8rem;
   margin-left: 4.5rem;
 }
 
-.work-page-header__btn {
+.header__btn {
   display: flex;
   width: 100%;
   padding: 0.1rem 7.5rem 0.8rem 8rem;
@@ -79,17 +73,17 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.work-page-header__btn:hover {
+.header__btn:hover {
   cursor: pointer;
   background-color: #501be9;
   transition: none;
 }
 
-.work-page-header__btn + .work-page-header__btn {
+.header__btn + .header__btn {
   margin-top: 1.2rem;
 }
 
-.work-page-header__btn__icon {
+.header__btn__icon {
   display: inline-block;
   width: 2.5rem;
   height: 2rem;
@@ -98,12 +92,12 @@ body {
   fill: #ffffff;
 }
 
-.work-page-header__btn__store {
+.header__btn__store {
   font-weight: 600;
   display: block;
 }
 
-.work-page-header__btn__text {
+.header__btn__text {
   padding-top: 0.75rem;
 }
 
@@ -111,8 +105,8 @@ body {
 
 /*athlets, players blocks start*/
 
-.work-page-athlets__title,
-.work-page-players__title {
+.athlets__title,
+.players__title {
   font-weight: 700;
   font-size: 5rem;
   color: #e7e7e7;
@@ -122,7 +116,7 @@ body {
   padding-left: 2rem;
 }
 
-.work-page-athlets__img {
+.athlets__img {
   padding-left: 7rem;
 }
 
@@ -188,17 +182,17 @@ body {
   border-bottom: 4px solid #ffffff;
 }
 
-.work-page-players__title_position {
+.players__title_position {
   padding-top: 0.5rem;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.work-page-players__img {
+.players__img {
   padding-left: 1rem;
 }
 
-.work-page-players__box {
+.players__box {
   margin-top: 4rem;
 }
 
@@ -292,7 +286,7 @@ body {
 
 /*footer start*/
 
-.work-page-footer {
+.footer {
   background-image: url(../img/footer-320.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -303,7 +297,7 @@ body {
   padding: 10rem 6.25vw 0.5rem;
 }
 
-.work-page-footer__icon {
+.footer__icon {
   display: block;
   box-sizing: border-box;
   width: 7.2rem;
@@ -315,25 +309,25 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.work-page-footer__icon:hover {
+.footer__icon:hover {
   background-color: #501be9;
   transition: none;
 }
 
-.work-page-footer__icon svg {
+.footer__icon svg {
   width: 5.5rem;
   height: 4.5rem;
   stroke: #ffffff;
 }
 
-.work-page-footer__title {
+.footer__title {
   margin-top: 5rem;
   margin-bottom: 0;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
 }
 
-.work-page-footer__subtitle {
+.footer__subtitle {
   margin-top: 0;
   margin-bottom: 7rem;
   font-size: 1.4rem;
@@ -342,7 +336,7 @@ body {
   letter-spacing: 0.04rem;
 }
 
-.work-page-footer__logo {
+.footer__logo {
   display: block;
   width: 13.5rem;
   height: 3.5rem;
@@ -350,9 +344,315 @@ body {
   padding-bottom: 1rem;
 }
 
-.work-page-footer__logo svg {
+.footer__logo svg {
   fill: #ffffff;
   stroke: #ffffff;
 }
+
+/*footer end*/
+
+@media (min-width: 641px) and (max-width: 960px) {
+  
+  /*header block start*/
+  .work-page {
+    width:102%;
+  }
+  .header,
+  .footer {
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-right: 5vw;
+  }
+
+  .header {
+    padding-bottom: 8.8rem;
+    background: url(../img/header-768.jpg);
+  }
+
+  .header__logo {
+    margin-left: 22rem;
+  }
+
+  .header__logo-icon {
+    width: 21rem;
+    height: 6.5rem;
+    padding-left: 1rem;
+  }
+
+  .header__title,
+  .header__subtitle {
+    font-size: 6.3rem;
+  }
+
+  .header__title {
+    margin-top: 17.9rem;
+    margin-bottom: 2.5rem;
+    margin-left: 3.7rem;
+    letter-spacing: 0.4rem;
+  }
+    
+  .header__subtitle {
+    margin-left: 14.5rem;
+    margin-bottom: 30rem;
+    letter-spacing: 0.4rem;
+    line-height: 7.5rem;
+  }
+
+  .header__btn {
+    width: 46%;
+    border-radius: 40px;
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 1.4rem;
+  }
+ 
+  .header__btn + .header__btn {
+    margin-top: 0; 
+    margin-right: 2rem;
+  }
+
+  .download-btn__apple {
+    margin-left: 1rem;
+    padding-left: 3.8rem;
+    padding-top: 1.4rem;
+  }
+  
+  .download-btn__google .header__btn__text{
+    padding-top: 0.3rem;
+  }
+
+  .header__btn__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2.6rem;
+    margin-top: 0;
+  }
+
+  /*header block end*/
+
+  /*athlets, players blocks start*/
+
+  .athlets,
+  .players {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .athlets__title,
+  .players__title {
+    padding-top: 5.8rem;
+    padding-left: 29rem;
+    font-size: 8rem;
+  }
+
+  .athlets__img {
+    position: absolute;
+    margin-left: -23rem;
+    margin-top: 9.5rem; 
+  }
+
+  .athlets-box__item {
+    padding-left: 27rem;
+  }
+
+  .athlets-box__num,
+  .players-box__num {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .athlets-box__title,
+  .players-box__title {
+    padding-top: 0;
+    font-size: 3rem;
+    letter-spacing: 0.3rem; 
+  }
+
+  .athlets-box__text,
+  .players-box__text {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2.3rem;
+  }
+
+  .athlets-box__item_1 {
+    padding-top: 3rem;
+  }
+
+  .athlets-box__item_1 .athlets-box__text {
+    padding-bottom: 3.7rem;
+  }
+ 
+  .athlets-box__item_2 {
+    padding-top: 3rem;
+  }
+
+  .athlets-box__item_2 .athlets-box__text {
+    padding-bottom: 3.1rem;
+    line-height: 2.8rem;
+  }
+
+  .athlets-box__item_2 .athlets-box__num {
+    margin-bottom: 0;
+  }
+ 
+  .athlets-box__item_3 {
+    padding-top: 3.5rem;
+  }
+
+  .athlets-box__item_3 .athlets-box__text {
+    padding-bottom: 3.7rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .players__img {
+    position: absolute;
+    margin-left: 32rem;
+    margin-top: 4rem;   
+  }
+
+  .players__title_position {
+    padding-left: 3rem;
+    margin-bottom: 0;
+  }
+
+  .players__box {
+    margin-top: 3rem;
+  }
+
+  .players-box__item {
+    padding-right: 27rem;
+    padding-left: 1rem;
+  }
+
+  .players-box__item_1 .players-box__text {
+    padding-bottom: 2.3rem;
+  }
+
+  .players-box__item_2 {
+    padding-top: 3.3rem;
+  }
+
+  .players-box__item_2 .players-box__text {
+    padding-bottom: 3.5rem;
+    margin-top: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  .players-box__item_3 {
+    padding-top: 3.4rem;
+  }
+
+  .players-box__item_3 .players-box__text {
+    padding-bottom: 3.7rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.85rem;
+    line-height: 2.4rem;
+  }
+
+  /*athlets, players blocks end*/
+  
+  /*be active,find contact,work it blocks start*/
+
+  .active-box__title {
+    padding-left: 3.2rem;
+    margin-top: -8rem;
+    font-size: 7.8rem;
+    letter-spacing: 0;
+  }
+
+  .active-box__text {
+    margin-bottom: 10rem;
+    padding-left: 3rem;
+    font-size: 2.7rem;
+    letter-spacing: 0;
+    line-height: 2.7rem;
+
+  }
+
+  .counter-block {
+    width: 11.6rem;
+    height: 11.6rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .counter {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .active-box__item_2 .active-box__title,
+  .active-box__item_3 .active-box__title {
+    margin-top: -9.1rem;
+  }
+
+  .active-box__item_2 .active-box__text {
+    margin-bottom: 10.8rem; 
+  }
+     
+  .active-box__item_3 .active-box__text {
+    font-size: 2.65rem;
+    line-height: 2.8rem;
+    padding-bottom: 1.2rem;
+  }
+
+  /*be active,find contact,work it blocks end*/
+
+  /*footer start*/
+  
+  .footer {
+    display: flex;
+    padding: 10rem 0 0.5rem;
+    background: url(../img/footer-768.jpg);
+  }
+
+  .footer__icon {
+    width: 13.2rem;
+    height: 13.5rem;
+    margin-top: 2.6rem;
+    margin-left: 32rem;
+    border-radius: 30px;
+  }
+
+  .footer__icon svg {
+    width: 9.5rem;
+    height: 10.5rem;   
+  }
+
+  .footer__title {
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+    font-size: 7.7rem;
+    letter-spacing: 0.7rem;
+  }
+
+  .footer__subtitle {
+    margin-bottom: 28.4rem;
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: -0.03rem;
+    margin-left: 6rem;
+  }
+
+  .footer button {
+    width: 41%; 
+  }
+
+  .footer .download-btn__apple {  
+    margin-left: 6rem;
+  }
+
+  .footer .download-btn__google {
+    margin-right: 5.5rem;  
+  }
+
+  .footer__logo {
+    width: 21rem;
+    height: 4.5rem;
+    margin: 5.5rem auto 2rem 28rem;
+  }
+
 
 /*footer end*/
