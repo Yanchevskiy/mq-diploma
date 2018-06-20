@@ -225,7 +225,8 @@ html {
 /*be active,find contact,work it blocks start*/
 
 .active-box__img {
-  max-width: 100%
+  max-width: 100%;
+  font-size: 0;
 }
 
 .counter-block {
@@ -354,9 +355,11 @@ html {
 @media (min-width: 641px) and (max-width: 960px) {
   
   /*header block start*/
+
   .work-page {
     width:102%;
   }
+
   .header,
   .footer {
     flex-flow: wrap;
@@ -367,6 +370,8 @@ html {
   .header {
     padding-bottom: 8.8rem;
     background: url(../img/header-768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .header__logo {
@@ -569,7 +574,6 @@ html {
     font-size: 2.7rem;
     letter-spacing: 0;
     line-height: 2.7rem;
-
   }
 
   .counter-block {
@@ -606,6 +610,8 @@ html {
     display: flex;
     padding: 10rem 0 0.5rem;
     background: url(../img/footer-768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .footer__icon {
@@ -654,5 +660,376 @@ html {
     margin: 5.5rem auto 2rem 28rem;
   }
 
+  /*footer end*/
 
-/*footer end*/
+}
+
+@media (min-width: 961px) {
+ 
+  /*header block start*/
+
+  .work-page {
+    width:102%;
+  }
+
+  .header,
+  .footer {
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-right: 5vw;
+  }
+
+  .header {
+    padding-bottom: 10.8rem;
+    background: url(../img/header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header__logo {
+    margin-left: 74rem;
+    margin-right: 74rem;
+  }
+
+  .header__logo-icon {
+    width: 20rem;
+    height: 7.5rem;
+  }
+
+  .header__title,
+  .header__subtitle {
+    font-size: 9.3rem;
+  }
+
+  .header__title {
+    margin-top: 29.5rem;
+    margin-bottom: 3.6rem;
+    margin-left: 5.8rem;
+    letter-spacing: 0.35rem;
+  }
+    
+  .header__subtitle {
+    margin-left: 51.5rem;
+    margin-bottom: 22rem;
+    letter-spacing: 0.3rem;
+    line-height: 7.5rem;
+  }
+
+  .header__btn {
+    width: 18%;
+    border-radius: 40px;
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 1.4rem;
+  }
+ 
+  .header__btn + .header__btn {
+    margin-top: 0; 
+    margin-right: 54.5rem;
+  }
+
+  .download-btn__apple {
+    margin-left: 50rem;
+    padding-left: 3.8rem;
+    padding-top: 1.4rem;
+  }
+  
+  .download-btn__google .header__btn__text{
+    padding-top: 0.3rem;
+  }
+
+  .header__btn__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2.6rem;
+    margin-top: 0;
+  }
+
+  /*header block end*/
+
+  /*athlets, players blocks start*/
+
+  .athlets,
+  .players {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .athlets__title,
+  .players__title {
+    padding-top: 8.8rem;
+    padding-left: 101rem;
+    font-size: 8rem;
+  }
+
+  .athlets__img {
+    position: absolute;
+    margin-left: 32rem;
+    margin-top: 2.5rem; 
+  }
+
+  .athlets-box__item {
+    padding-left: 99rem;
+  }
+
+  .athlets-box__num,
+  .players-box__num {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .athlets-box__title,
+  .players-box__title {
+    padding-top: 0;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem; 
+  }
+
+  .athlets-box__text,
+  .players-box__text {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+
+  .athlets-box__text {
+    padding-right: 16rem;
+  }
+
+  .athlets-box__item_1 {
+    padding-top: 7.5rem;
+  }
+
+  .athlets-box__item_1 .athlets-box__text {
+    padding-bottom: 7rem;
+  }
+ 
+  .athlets-box__item_2 {
+    padding-top: 3rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .athlets-box__item_2 .athlets-box__title {
+    letter-spacing: 0.25rem;
+  }
+
+  .athlets-box__item_2 .athlets-box__text {
+    padding-bottom: 3.1rem;
+    line-height: 2.8rem;
+  }
+
+  .athlets-box__item_2 .athlets-box__num {
+    margin-bottom: 0;
+  }
+ 
+  .athlets-box__item_3 {
+    padding-top: 5rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .athlets-box__item_3 .athlets-box__text {
+    padding-bottom: 3.7rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .players__img {
+    position: absolute;
+    margin-top: 2.5rem;
+    right: 14rem;
+  }
+
+  .players__title_position {
+    padding-left: 18.5rem;
+    margin-bottom: 0;
+  }
+
+  .players__box {
+    margin-top: 7.8rem;
+  }
+
+  .players-box__item {
+    padding-right: 96rem;
+    padding-left: 17rem;
+  }
+
+  .players-box__item_1 .players-box__text {
+    padding-bottom: 4rem;
+    line-height: 2.5rem;
+  }
+
+  .players-box__item_2 {
+    padding-top: 4.1rem;
+  }
+
+  .players-box__item_2 .players-box__text {
+    padding-bottom: 8.3rem;
+    margin-top: 2.7rem;
+    line-height: 2.6rem;
+  }
+
+  .players-box__item_3 {
+    padding-top: 4.9rem;
+  }
+
+  .players-box__item_3 .players-box__text {
+    padding-bottom: 5.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.85rem;
+    line-height: 2.4rem;
+  }
+
+  /*athlets, players blocks end*/
+  
+  /*be active,find contact,work it blocks start*/
+
+  .active__box {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .active-box__title {
+    position: absolute;
+    left: 49.5%;
+    top: 37%;
+    padding-left: 12.2rem;
+    font-size: 7.8rem;
+    letter-spacing: 0;
+  }
+
+  .active-box__text {
+    margin-bottom: 10rem;
+    padding-top: 43rem;
+    padding-left: 12.5rem;
+    padding-right: 19rem;
+    font-size: 2.7rem;
+    letter-spacing: 0;
+    line-height: 2.7rem;
+  }
+
+  .counter-block {
+    width: 16.8rem;
+    height: 15.5rem;
+    margin-bottom: -13.2rem;
+    margin-left: -20.5rem;
+  }
+
+  .counter {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .active-box__item_1 .active-box__text {
+    width: 34%;
+  }
+
+  .active-box__item_2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .active-box__item_2 .active-box__title{
+    right: 46%;
+    top: 33.2%;
+  }
+
+  .active-box__item_2 .active-box__title {
+    margin-top: -3.3rem;
+    margin-left: -88.8rem;
+  }
+
+  .active-box__item_2 .active-box__text {
+    width: 35%;
+    margin-bottom: 0;
+    padding-left: 15rem;
+    padding-top: 39rem;
+    padding-right: 11rem;
+  }
+
+  .active-box__item_2 .counter-block {
+    margin-left: 68.3rem;
+    margin-bottom: -13.3rem;
+  }
+     
+  .active-box__item_3 .active-box__text {
+    width: 34%;
+    font-size: 2.65rem;
+    line-height: 2.6rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .active-box__item_3 .active-box__title {
+    top: 66%;
+    margin-top: -27.1rem;
+    padding-left: 13.2rem;
+  }
+
+  .active-box__item_3 .counter-block {
+    margin-left: -21.5rem;
+  }
+  /*be active,find contact,work it blocks end*/
+
+  /*footer start*/
+  
+  .footer {
+    display: flex;
+    padding: 10rem 0 0.5rem;
+    background: url(../img/footer-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .footer__icon {
+    width: 13.2rem;
+    height: 13.5rem;
+    margin-top: 12.6rem;
+    margin-left: 52.5rem;
+    margin-right: 0;
+    border-radius: 30px;
+  }
+
+  .footer__icon svg {
+    width: 9.5rem;
+    height: 10.5rem;   
+  }
+
+  .footer__title {
+    margin-top: 12.4rem;
+    margin-left: 1.5rem;
+    margin-right: 52.5rem;
+    font-size: 7.7rem;
+    letter-spacing: 0.7rem;
+  }
+
+  .footer__subtitle {
+    margin-bottom: 16.4rem;
+    margin-top: -3.5rem;
+    font-size: 2.9rem;
+    line-height: 1;
+    letter-spacing: -0.03rem;
+    margin-left: 69rem;
+  }
+
+  .footer button {
+    width: 16%; 
+  }
+
+  .footer .download-btn__apple {  
+    margin-left: 62rem;
+  }
+
+  .footer .download-btn__google {
+    margin-right: 64.5rem;  
+  }
+
+  .footer__logo {
+    width: 21rem;
+    height: 4.5rem;
+    margin: 25.5rem auto 6rem 86rem;
+  }
+
+  /*footer end*/
+
+}
